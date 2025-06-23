@@ -57,7 +57,7 @@ app.get('/', (req, res) => {
         </style>
       </head>
       <body>
-        <h1>🌙 Dark Weather App</h1>
+        <h1>Weather App with Express JS</h1>
         <form action="/" method="post">
           <input type="text" name="city" placeholder="Enter city name" required/>
           <button type="submit">Get Weather</button>
