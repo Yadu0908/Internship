@@ -10,7 +10,6 @@ const app= express();
 const server= http.createServer(app);
 const io = new Server(server)
 
-
 //socket io
 
 io.on("connection", (socket) =>{
@@ -23,7 +22,6 @@ io.on("connection", (socket) =>{
     })
     
 })
-
 
 app.use(express.static(path.resolve('./public')))
 
