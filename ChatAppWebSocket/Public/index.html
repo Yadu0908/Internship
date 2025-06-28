@@ -16,11 +16,9 @@
 
     <button id="sendBtn" style="margin-top: 1rem;">Send</button>
     
-
     <!-- client initilasation. -->
 
     <script src="/socket.io/socket.io.js"></script>
-
 
     <script>
         const socket= io();
@@ -28,7 +26,6 @@
         const sendBtn= document.getElementById('sendBtn');
         const messageTxt= document.getElementById('messageTxt')
         const allMessages= document.getElementById('divMessage')
-
 
         socket.on('message', (message) => {
 
@@ -38,8 +35,6 @@
 
             allMessages.appendChild(p);
         })
-        
-
 
         sendBtn.addEventListener('click', (e) =>{
             
